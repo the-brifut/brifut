@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF;
+  }
+  
+  h1 {
+    color: #4682B4;
+    text-align: center;
+  }
+  
+  p {
+    color: #333333;
+    text-align: justify;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    /* Use flexbox to create a flexible layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 50px;
+    background-color: #4682B4;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #5F9EA0;
+  }
+  
+  /* Use media queries to change the styles for different screen widths */
+  @media (max-width: 768px) {
+    /* Reduce the width of the container */
+    .container {
+      width: 90%;
+    }
+  
+    /* Reduce the width of the logo */
+    .logo {
+      width: 70%;
+    }
+  
+    /* Reduce the font size of the heading */
+    h1 {
+      font-size: 24px;
+    }
+  
+    /* Reduce the font size of the paragraph */
+    p {
+      font-size: 16px;
+    }
+  
+    /* Reduce the width and height of the button */
+    .button {
+      width: 40%;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+  
