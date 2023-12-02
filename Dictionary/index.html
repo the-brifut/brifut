@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <title>BriFut-En-Dictionary</title>
+    </head>
+    <body>
+        <!-- add a hidden checkbox input to store the state of the toggle button -->
+        <input type="checkbox" id="toggle-checkbox" hidden>
+        
+        <!-- add a label element with the class "toggle" and link it to the checkbox input -->
+        <label for="toggle-checkbox" class="toggle"></label>
+        <h1>Bri<span>Fut</span></h1>
+        <audio id="sound" style="display: none;"></audio>
+                <div class="container">
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Type the word here.."
+                    id="inp-word"
+                />
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
