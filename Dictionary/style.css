@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    direction: rtl;
 }
 
 *:not(i) {
@@ -166,4 +167,18 @@ span {
     .search-box button {
         flex: 0 0 30%;
     }
+}
+
+#id {
+
+        display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: start;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
 }
