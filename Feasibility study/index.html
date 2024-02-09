@@ -4,20 +4,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Font Awesome -->
         <link
-            rel="stylesheet"
+            rel="stylesheet" media='all'
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         />
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" media='all' href="/assets/css/bootstrap.min.css">
         <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
+            rel="stylesheet" media='all'
         />
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" media='all' href="style.css" />
         <title>BriFut-Feasibility study Maker</title>
     </head>
-    <body>
+    <body dir="rtl">
+      <div class="d-print-none">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><span style="color: #ffc70a;;">Bri</span><span
                 style="color: #00a2e8;">Fut</span></a>
@@ -51,9 +52,62 @@
         <!-- add a hidden checkbox input to store the state of the toggle button -->
         <h1 class="text-right m-1">اهلاً بك في منشى دراسة الجدوى</h1>
 
+        <form class="m-3 text-right align-items-end ">
+          <div class="form-row ">
+            <div class="form-group col-md-6 ">
+              <label for="inputEmail4 order-1">اسم المشروع</label>
+              <input  type="text" class="form-control text-right" id="inputEmail4" placeholder="قم بإدخال اسم المشروع هنا">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">الميزانية
+              </label>
+              <input type="number" class="form-control" id="inputPassword4" placeholder="قم بإدخال الميزانية هنا">
+            </div>
+          </div>
 
-
-
+          <div class="form-row ">
+            <div class="form-group col-md-6 ">
+              <label for="inputEmail4 order-1">الأحتياج الأول</label>
+              <input  type="text" class="form-control text-right" id="inputEmail4" placeholder="قم بإدخال اسم المشروع هنا">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">ميزانية الأحتياج الأول
+              </label>
+              <input type="number" class="form-control" id="inputPassword4" placeholder="قم بإدخال الميزانية هنا">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="window.print()">طباعة</button>
+        </form>
+</div>
+        <table class="table m-4 d-none d-print-block">
+          <thead class="thead-light">
+            <tr>
+              <th  colspan="3 ">اسم المشروع</th>
+            </tr>
+            <tr>
+              <th scope="col">عدد</th>
+              <th scope="col">اسم الاحتياج</th>
+              <th scope="col">ميزانية الاحتياج</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+            </tr>
+          </tbody>
+        </table>
         <!-- Script -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
